@@ -1,0 +1,63 @@
+/* ============================================================
+   style.css - CRUD-Persons (TP4 JavaScript - Partie 2)
+   ============================================================ */
+
+/* ---------- Étape 1 : mise en forme du tableau ---------- */
+body {
+    background: #f4f4f4;
+}
+
+/* Conteneur : tableau au milieu + police globale Calibri en premier choix */
+#table_container {
+    width: 70%;
+    margin: 40px auto;                      /* centre le conteneur horizontalement */
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    font-family: Calibri, Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #007bbd;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #e3e3e3;
+    font-size: 14px;
+}
+
+/* Classes affectées aux colonnes */
+.col_number { width: 70px; text-align: center; }
+.col_text   { text-align: left; padding-left: 12px; }
+.col_chkbox { width: 80px; text-align: center; }
+
+/* ---------- Étape 4 : espace "Résumé" ---------- */
+#container_summary {
+    display: flex;
+    justify-content: space-between;
+    background: #eee;
+    padding: 0 12px;
+    font-size: 14px;
+}
+#container_summary p { margin: 10px 0; }
+
+/* ---------- Étape 5 : formulaire de saisie ---------- */
+#form_container {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+.form_group { display: flex; align-items: center; gap: 6px; }
+.form_label { font-weight: bold; font-size: 13px; }
+.form_field { width: 160px; padding: 4px; border: 1px solid #777; }

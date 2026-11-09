@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD-Persons - Étape 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="table_container">
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Points</th>
+                    <th>Select</th>
+                </tr>
+            </thead>
+            <!-- Le corps est vide : les lignes seront insérées par JavaScript depuis le tableau "persons" -->
+            <tbody>
+            </tbody>
+        </table>
+        <!-- Boutons (onclick : slides 129 à 135) -->
+        <button onclick="doInsertRowTable(99, 'nom', 'prenom', 10)">Ajouter</button>
+        <button onclick="consoleTableau()">Console Tableau</button>
+    </div>
+
+    <!-- Méthode 3 : fichier JS externe, placé à la fin du body (slides 23, 24 et 27) -->
+    <script src="script.js"></script>
+</body>
+</html>

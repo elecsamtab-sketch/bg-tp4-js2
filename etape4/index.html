@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD-Persons - Étape 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="table_container">
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Points</th>
+                    <th>Select</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <!-- Espace "Résumé" juste au-dessous du tableau -->
+        <div id="container_summary">
+            <p id="p1">0 ligne(s)</p>
+            <p id="p2"></p>
+            <p id="p3">Total point(s)= 0</p>
+        </div>
+
+        <!-- Le bouton Ajouter appelle désormais doInsert (onclick : slides 129 à 135) -->
+        <button onclick="doInsert('nom', 'prenom', 10)">Ajouter</button>
+        <button onclick="consoleTableau()">Console Tableau</button>
+    </div>
+
+    <!-- Méthode 3 : fichier JS externe, placé à la fin du body (slides 23, 24 et 27) -->
+    <script src="script.js"></script>
+</body>
+</html>
